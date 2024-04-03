@@ -29,10 +29,10 @@ if (pinAnswer.pin === myPin) {
         myBalance -= amountAns.amount;
         console.log(`your balance is ${myBalance}`);
     }
-    else if (operationAns.operation === "check balance") {
+    if (operationAns.operation === "check balance") {
         console.log(`your balance is ${myBalance}`);
     }
-    else if (operationAns.operation === "fast cash") {
+    if (operationAns.operation === "fast cash") {
         console.log("choose your option");
         var fastcashAns = await inquirer.prompt([
             {
