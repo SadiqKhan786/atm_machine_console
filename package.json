@@ -1,6 +1,6 @@
 {
   "name": "atm_machine_console",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "atm machine using typescript",
   "main": "index.js",
   "type": "module",
