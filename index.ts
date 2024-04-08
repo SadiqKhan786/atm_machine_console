@@ -44,9 +44,10 @@ if(pinAnswer.pin === myPin){
     if (operationAns.operation === "check balance"){
         console.log(`your balance is ${myBalance}`)
     }
+
     if(operationAns.operation === "fast cash"){
         console.log("choose your option")
-        var fastcashAns = await inquirer.prompt(
+        let fastcashAns = await inquirer.prompt(
             [
                 {
                     name: "opfastcash",
@@ -56,18 +57,20 @@ if(pinAnswer.pin === myPin){
                 }
             ]
         )
-    }
+     
+    
     if (fastcashAns.opfastcash === "1000"){
         myBalance -= fastcashAns.opfastcash
         console.log(`your new balance is ${myBalance}`)
     }
-    else if (fastcashAns.opfastcash === "2000"){
+    if (fastcashAns.opfastcash === "2000"){
         myBalance -= fastcashAns.opfastcash
         console.log(`your new balance is ${myBalance}`)
     }
-    else if (fastcashAns.opfastcash === "3000"){
+    if (fastcashAns.opfastcash === "3000"){
         myBalance -= fastcashAns.opfastcash
         console.log(`your new balance is ${myBalance}`)
+    }
     }
 }
 else{
